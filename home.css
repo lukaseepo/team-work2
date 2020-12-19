@@ -6,7 +6,16 @@
   font-family: arial;
 }
 
-a {
-  text-decoration: none;
+.menu-section {
+  width: 100%;
+}
+
+.menu-section .menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=home.css.map */

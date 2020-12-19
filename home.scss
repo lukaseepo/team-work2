@@ -5,6 +5,10 @@
     font-family: arial;
 }
 
-a {
-    text-decoration: none;
+.menu-section {
+    width: 100%;
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+    }
 }
