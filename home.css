@@ -6,6 +6,11 @@
   font-family: arial;
 }
 
+.container {
+  width: 1160px;
+  margin: auto;
+}
+
 .menu-section {
   width: 100%;
 }
@@ -17,5 +22,35 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.red-section {
+  width: 100%;
+  height: auto;
+  background-color: #ed1d24;
+}
+
+.red-section .items {
+  padding: 80px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.red-section .items .item {
+  width: 50%;
+  height: auto;
+}
+
+.red-section .items .item .image {
+  width: 286px;
+  height: 328px;
 }
 /*# sourceMappingURL=home.css.map */
