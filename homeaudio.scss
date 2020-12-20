@@ -7,5 +7,94 @@
 }
 
 .container{
-    width: 1470px;
+    width: 1350px;
+    margin: auto;
+
+    @media only screen and (max-width: 1510px) {
+        width: 90%;
+    }
+}
+
+.content{
+
+    .container{
+
+        .content-top{
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ebebeb;
+            margin-bottom: 45px;
+
+            .top-pages{
+                color: #666;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 20px;
+
+                a{
+                    color: #666;
+                }
+
+                .home-audio{
+                    color: #ed1d24;
+                }
+            }
+
+            .top-title{
+                color: #1f2021;
+                font-size: 22px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 24px;
+            }
+
+            .top-pages, .top-title{
+                margin-top: 15px;
+            }
+        }
+        
+        .content-items{
+            display: flex;
+
+            .left-bar{
+                background-color: red;
+                width: 25%;
+                height: 1000px;
+
+                .categories{
+                    width: 90%;
+                    background-color: yellow;
+                    height: 240px;
+
+                    .categories-title{
+                    color: #1f2021;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    text-transform: uppercase;
+                    height: 28px;
+                    border-bottom: 1px solid #ebebeb;
+                    }
+
+                    .categories-title::after{
+                        content: '';
+                        pointer-events: none;
+                        position: absolute;
+                        top: 120px;
+                        left: 278px;
+                        width: 70px;
+                        height: 3px;
+                        background-color: #ed1d24;
+                    }
+                }
+            }
+    
+            .main-content{
+                background-color: blue;
+                width: 75%;
+                height: 1000px;
+            }
+        }
+    }
 }

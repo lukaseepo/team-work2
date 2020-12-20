@@ -1,1 +1,104 @@
-/* No CSS *//*# sourceMappingURL=homeaudio.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial;
+  text-decoration: none;
+}
+
+.container {
+  width: 1350px;
+  margin: auto;
+}
+
+@media only screen and (max-width: 1510px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.content .container .content-top {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 45px;
+}
+
+.content .container .content-top .top-pages {
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.content .container .content-top .top-pages a {
+  color: #666;
+}
+
+.content .container .content-top .top-pages .home-audio {
+  color: #ed1d24;
+}
+
+.content .container .content-top .top-title {
+  color: #1f2021;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+.content .container .content-top .top-pages, .content .container .content-top .top-title {
+  margin-top: 15px;
+}
+
+.content .container .content-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .container .content-items .left-bar {
+  background-color: red;
+  width: 25%;
+  height: 1000px;
+}
+
+.content .container .content-items .left-bar .categories {
+  width: 90%;
+  background-color: yellow;
+  height: 240px;
+}
+
+.content .container .content-items .left-bar .categories .categories-title {
+  color: #1f2021;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  height: 28px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.content .container .content-items .left-bar .categories .categories-title::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  top: 120px;
+  left: 278px;
+  width: 70px;
+  height: 3px;
+  background-color: #ed1d24;
+}
+
+.content .container .content-items .main-content {
+  background-color: blue;
+  width: 75%;
+  height: 1000px;
+}
+/*# sourceMappingURL=homeaudio.css.map */
