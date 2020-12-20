@@ -5,10 +5,38 @@
     font-family: arial;
 }
 
+@import"colors";
+.container {
+    width: 1160px;
+    margin: auto;
+}
+
 .menu-section {
     width: 100%;
     .menu-items {
         display: flex;
         justify-content: space-between;
+    }
+}
+
+//red-section//
+.red-section {
+    width: 100%;
+    height: auto;
+    background-color: $red;
+    .items {
+        padding: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .item {
+            width: 50%;
+            height: auto;
+            .image {
+                width: 286px;
+                height: 328px;
+            }
+        }
     }
 }
