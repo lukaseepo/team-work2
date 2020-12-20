@@ -66,13 +66,13 @@
 .content .container .content-items .left-bar {
   background-color: red;
   width: 25%;
-  height: 1000px;
 }
 
 .content .container .content-items .left-bar .categories {
   width: 90%;
   background-color: yellow;
   height: 240px;
+  margin-bottom: 40px;
 }
 
 .content .container .content-items .left-bar .categories .categories-title {
@@ -83,17 +83,183 @@
   text-transform: uppercase;
   height: 28px;
   border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
 }
 
 .content .container .content-items .left-bar .categories .categories-title::after {
   content: '';
   pointer-events: none;
   position: absolute;
-  top: 120px;
-  left: 278px;
+  margin-top: 25px;
+  margin-left: -117px;
   width: 70px;
   height: 3px;
   background-color: #ed1d24;
+}
+
+.content .container .content-items .left-bar .categories .categories-items {
+  color: #666;
+  list-style: none;
+}
+
+.content .container .content-items .left-bar .categories .categories-items .categories-item {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.content .container .content-items .left-bar .categories .categories-items a {
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.content .container .content-items .left-bar .filter {
+  width: 90%;
+  background-color: yellow;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.content .container .content-items .left-bar .filter .filter-title {
+  color: #1f2021;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  height: 28px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+.content .container .content-items .left-bar .filter .filter-title::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -172px;
+  width: 70px;
+  height: 3px;
+  background-color: #ed1d24;
+}
+
+.content .container .content-items .left-bar .filter .filter-items {
+  color: #666;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.content .container .content-items .left-bar .filter .filter-items .filter-item {
+  color: #666;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.content .container .content-items .left-bar .filter .filter-items .filter-item a {
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+
+.content .container .content-items .left-bar .filter .filter-items li {
+  margin-bottom: 13px;
+}
+
+.content .container .content-items .left-bar .type {
+  width: 90%;
+  background-color: yellow;
+  height: 300px;
+  margin-bottom: 40px;
+}
+
+.content .container .content-items .left-bar .type .type-title {
+  color: #1f2021;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  height: 28px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+.content .container .content-items .left-bar .type .type-title::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -142px;
+  width: 70px;
+  height: 3px;
+  background-color: #ed1d24;
+}
+
+.content .container .content-items .left-bar .type .type-items {
+  color: #666;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.content .container .content-items .left-bar .type .type-items .type-item {
+  color: #666;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.content .container .content-items .left-bar .type .type-items .type-item a {
+  color: #666;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+}
+
+.content .container .content-items .left-bar .type .type-items li {
+  margin-bottom: 13px;
+}
+
+.content .container .content-items .left-bar .tags {
+  width: 90%;
+  background-color: yellow;
+  height: 625px;
+  margin-bottom: 40px;
+}
+
+.content .container .content-items .left-bar .tags .tags-title {
+  color: #1f2021;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  height: 28px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+.content .container .content-items .left-bar .tags .tags-title::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -144px;
+  width: 70px;
+  height: 3px;
+  background-color: #ed1d24;
+}
+
+.content .container .content-items .left-bar .tags .tags-items .tags-color .colors-title {
+  color: #1f2021;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .content .container .content-items .main-content {
