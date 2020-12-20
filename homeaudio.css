@@ -8,7 +8,7 @@
 }
 
 .container {
-  width: 1350px;
+  width: 1300px;
   margin: auto;
 }
 
@@ -16,6 +16,41 @@
   .container {
     width: 90%;
   }
+}
+
+a:hover {
+  color: red;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: initial;
+  -moz-appearance: initial;
+       appearance: initial;
+  background: white;
+  width: 19px;
+  height: 19px;
+  border: none;
+  position: relative;
+  border: 1px solid gray;
+  position: relative;
+  top: 3px;
+}
+
+input[type="checkbox"]:hover {
+  content: "\25FC";
+  border: 1px solid red;
+}
+
+input[type="checkbox"]:checked {
+  background: white;
+}
+
+input[type="checkbox"]:checked:after {
+  content: "\25FC";
+  color: black;
+  position: relative;
+  left: 3px;
+  top: 1px;
 }
 
 .content .container .content-top {
@@ -64,13 +99,11 @@
 }
 
 .content .container .content-items .left-bar {
-  background-color: red;
   width: 25%;
 }
 
 .content .container .content-items .left-bar .categories {
   width: 90%;
-  background-color: yellow;
   height: 240px;
   margin-bottom: 40px;
 }
@@ -113,6 +146,12 @@
   margin-bottom: 13px;
 }
 
+.content .container .content-items .left-bar .categories .categories-items a:hover {
+  color: red;
+  -webkit-transition: 0.3;
+  transition: 0.3;
+}
+
 .content .container .content-items .left-bar .categories .categories-items a {
   color: #666;
   font-size: 15px;
@@ -122,7 +161,6 @@
 
 .content .container .content-items .left-bar .filter {
   width: 90%;
-  background-color: yellow;
   height: 300px;
   margin-bottom: 40px;
 }
@@ -161,6 +199,10 @@
   margin-bottom: 10px;
 }
 
+.content .container .content-items .left-bar .filter .filter-items .filter-item a:hover {
+  color: red;
+}
+
 .content .container .content-items .left-bar .filter .filter-items .filter-item a {
   color: #666;
   font-size: 15px;
@@ -175,7 +217,6 @@
 
 .content .container .content-items .left-bar .type {
   width: 90%;
-  background-color: yellow;
   height: 300px;
   margin-bottom: 40px;
 }
@@ -214,6 +255,10 @@
   margin-bottom: 10px;
 }
 
+.content .container .content-items .left-bar .type .type-items .type-item a:hover {
+  color: red;
+}
+
 .content .container .content-items .left-bar .type .type-items .type-item a {
   color: #666;
   font-size: 15px;
@@ -228,8 +273,8 @@
 
 .content .container .content-items .left-bar .tags {
   width: 90%;
-  background-color: yellow;
-  height: 625px;
+  border-bottom: 1px solid #ebebeb;
+  height: 695px;
   margin-bottom: 40px;
 }
 
@@ -255,6 +300,12 @@
   background-color: #ed1d24;
 }
 
+.content .container .content-items .left-bar .tags .tags-items .tags-color {
+  border-bottom: 1px solid #ebebeb;
+  height: 68px;
+  margin-bottom: 30px;
+}
+
 .content .container .content-items .left-bar .tags .tags-items .tags-color .colors-title {
   color: #1f2021;
   font-size: 15px;
@@ -262,8 +313,213 @@
   text-transform: uppercase;
 }
 
+.content .container .content-items .left-bar .tags .tags-items .tags-color .picker-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.content .container .content-items .left-bar .tags .tags-items .tags-color .picker-items .picker-item {
+  margin-top: 10px;
+}
+
+.content .container .content-items .left-bar .tags .tags-items .tags-color .picker-items .picker-item .background-color {
+  background-color: red;
+  width: 27px;
+  height: 27px;
+}
+
+.content .container .content-items .left-bar .tags .tags-items .tags-color .picker-items .picker-item .color {
+  width: 27px;
+  height: 27px;
+  margin-top: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: absolute;
+  margin-top: -27px;
+}
+
+.content .container .content-items .left-bar .tags .tags-items .tags-color .picker-items .picker-item .color:hover {
+  width: 22px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  margin-top: -24.5px;
+  margin-left: 2.5px;
+  width: 22px;
+  height: 22px;
+}
+
+.content .container .content-items .left-bar .tags .tags-price {
+  height: 155px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 30px;
+}
+
+.content .container .content-items .left-bar .tags .tags-price .price-title {
+  color: #1f2021;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content .container .content-items .left-bar .tags .tags-price .price-items .price-item {
+  color: #666;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.content .container .content-items .left-bar .tags .tags-price .price-items .price-item input[type="checkbox"] {
+  -webkit-appearance: initial;
+  -moz-appearance: initial;
+       appearance: initial;
+  background: white;
+  width: 19px;
+  height: 19px;
+  border: none;
+  position: relative;
+  border: 1px solid gray;
+  position: relative;
+  top: 3px;
+}
+
+.content .container .content-items .left-bar .tags .tags-price .price-items .price-item input[type="checkbox"]:hover {
+  content: "\25FC";
+  border: 1px solid red;
+}
+
+.content .container .content-items .left-bar .tags .tags-price .price-items .price-item input[type="checkbox"]:checked {
+  background: white;
+}
+
+.content .container .content-items .left-bar .tags .tags-price .price-items .price-item input[type="checkbox"]:checked:after {
+  content: "\25FC";
+  color: black;
+  position: relative;
+  left: 3px;
+  top: 1px;
+}
+
+.content .container .content-items .left-bar .tags .tags-size .size-title {
+  color: #1f2021;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.content .container .content-items .left-bar .tags .tags-size .size-items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.content .container .content-items .left-bar .tags .tags-size .size-items .size-item {
+  color: #666;
+  line-height: 20px;
+  margin-top: 15px;
+}
+
+.content .container .content-items .left-bar .products {
+  width: 90%;
+  height: 430px;
+  margin-bottom: 40px;
+}
+
+.content .container .content-items .left-bar .products .products-title {
+  color: #1f2021;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  height: 28px;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 20px;
+}
+
+.content .container .content-items .left-bar .products .products-title::after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -101px;
+  width: 70px;
+  height: 3px;
+  background-color: #ed1d24;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item {
+  margin-bottom: 70px;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item .product-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item .product-flex .product-img {
+  width: 102px;
+  height: 102px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item .product-flex .product-title {
+  color: #1f2021;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: right;
+  margin-left: 20px;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item .product-flex a:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item .product-flex a {
+  color: #1f2021;
+  font-weight: 700;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item .product-price {
+  color: #ed1d24;
+  font-weight: 700;
+  margin-left: 120px;
+  margin-top: -60px;
+}
+
+.content .container .content-items .left-bar .products .product-items .product-item .product-price span {
+  text-decoration: line-through;
+  color: #8f8f8f;
+  font-weight: 400;
+}
+
+.content .container .content-items .left-bar .sidebar-banner {
+  overflow: hidden;
+  background-position: center center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.content .container .content-items .left-bar .sidebar-banner:hover .sidebar-banner-img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.content .container .content-items .left-bar .sidebar-banner-img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .content .container .content-items .main-content {
-  background-color: blue;
   width: 75%;
   height: 1000px;
 }
