@@ -7,7 +7,7 @@
 }
 
 .container{
-    width: 1350px;
+    width: 1300px;
     margin: auto;
 
     @media only screen and (max-width: 1510px) {
@@ -15,11 +15,46 @@
     }
 }
 
+a:hover{
+    color: red;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: initial;
+    appearance: initial;
+    background: white;
+    width: 19px;
+    height: 19px;
+    border: none;
+    position: relative;
+    border: 1px solid gray;
+    position: relative;
+    top: 3px;
+}
+
+input[type="checkbox"]:hover{
+    content: "\25FC";
+    border: 1px solid red;
+}
+
+input[type="checkbox"]:checked {
+    background: white;
+}
+input[type="checkbox"]:checked:after {
+    
+    content: "\25FC";
+    color: black;
+    position: relative;
+    left: 3px;
+    top: 1px;
+}
+
 .content{
 
     .container{
 
         .content-top{
+
             height: 50px;
             display: flex;
             justify-content: space-between;
@@ -58,12 +93,11 @@
             display: flex;
 
             .left-bar{
-                background-color: red;
                 width: 25%;
+
 
                 .categories{
                     width: 90%;
-                    background-color: yellow;
                     height: 240px;
                     margin-bottom: 40px;
 
@@ -100,6 +134,11 @@
                             margin-bottom: 13px;
                         }
 
+                        a:hover{
+                            color: red;
+                            transition: 0.3;
+                        }
+
                         a {
                             color: #666;
                             font-size: 15px;
@@ -111,7 +150,6 @@
 
                 .filter{
                     width: 90%;
-                    background-color: yellow;
                     height: 300px;
                     margin-bottom: 40px;
 
@@ -148,6 +186,9 @@
                             list-style: none;
                             margin-bottom: 10px;
                         
+                            a:hover{
+                                color: red;
+                            }
 
                             a{
                                 color: #666;
@@ -166,7 +207,6 @@
 
                 .type{
                     width: 90%;
-                    background-color: yellow;
                     height: 300px;
                     margin-bottom: 40px;
 
@@ -203,6 +243,9 @@
                             list-style: none;
                             margin-bottom: 10px;
                         
+                            a:hover{
+                                color: red;
+                            }
 
                             a{
                                 color: #666;
@@ -221,8 +264,8 @@
 
                 .tags{
                     width: 90%;
-                    background-color: yellow;
-                    height: 625px;
+                    border-bottom: 1px solid #ebebeb;
+                    height: 695px;
                     margin-bottom: 40px;
 
                     .tags-title{
@@ -250,21 +293,225 @@
                     .tags-items{
 
                         .tags-color{
+                            border-bottom: 1px solid #ebebeb;
+                            height: 68px;
+                            margin-bottom: 30px;
 
                             .colors-title{
                                 color: #1f2021;
                                 font-size: 15px;
                                 font-weight: 700;
                                 text-transform: uppercase;
+                            }
 
+                            .picker-items{
+                                display: flex;
+                                justify-content: space-around;
+
+                                .picker-item{
+                                    margin-top: 10px;
+
+                                    .background-color{
+                                        background-color: red;
+                                        width: 27px;
+                                        height: 27px;
+                                    }
+
+                                    .color{
+                                        width: 27px;
+                                        height: 27px;
+                                        margin-top: 10px;
+                                        transition: all 0.3s ease;
+                                        position: absolute;
+                                        margin-top: -27px;
+                                    }
+
+                                    .color:hover{
+                                        width: 22px;
+                                        transition: all 0.3s ease;
+                                        margin-top: -24.5px;
+                                        margin-left: 2.5px;
+                                        width: 22px;
+                                        height: 22px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .tags-price{
+                        height: 155px;
+                        border-bottom: 1px solid #ebebeb;
+                        margin-bottom: 30px;
+
+                        .price-title{
+                            color: #1f2021;
+                            font-size: 15px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+
+                        .price-items{
+
+                            .price-item{
+                                color: #666;
+                                line-height: 20px;
+                                margin-top: 15px;
+
+                                input[type="checkbox"]{
+                                    -webkit-appearance: initial;
+                                    appearance: initial;
+                                    background: white;
+                                    width: 19px;
+                                    height: 19px;
+                                    border: none;
+                                    position: relative;
+                                    border: 1px solid gray;
+                                    position: relative;
+                                    top: 3px;
+                                }
+
+                                input[type="checkbox"]:hover{
+                                    content: "\25FC";
+                                    border: 1px solid red;
+                                }
+
+                                input[type="checkbox"]:checked {
+                                    background: white;
+                                }
+                                input[type="checkbox"]:checked:after {
+                                    
+                                    content: "\25FC";
+                                    color: black;
+                                    position: relative;
+                                    left: 3px;
+                                    top: 1px;
+                                }
+                            }
+                        }
+                    }
+
+                    .tags-size{
+
+                        .size-title{
+                            color: #1f2021;
+                            font-size: 15px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            margin-bottom: 10px;
+                        }
+
+                        .size-items{
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            .size-item{
+                                color: #666;
+                                line-height: 20px;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+
+                }
+
+                .products{
+                    width: 90%;
+                    height: 430px;
+                    margin-bottom: 40px;
+
+                    .products-title{
+                        color: #1f2021;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 1.2;
+                        text-transform: uppercase;
+                        height: 28px;
+                        border-bottom: 1px solid #ebebeb;
+                        margin-bottom: 20px;
+                        }
+    
+                        .products-title::after{
+                            content: '';
+                            pointer-events: none;
+                            position: absolute;
+                            margin-top: 25px;
+                            margin-left: -101px;
+                            width: 70px;
+                            height: 3px;
+                            background-color: #ed1d24;
+                        }
+                        
+                    .product-items{
+
+                        .product-item{
+                            margin-bottom: 70px;
+                            .product-flex{
+                                display: flex;
+                                
+                                .product-img{
+                                    width: 102px;
+                                    height: 102px;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    }
+
+                                .product-title{
+                                    color: #1f2021;
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    text-align: right;
+                                    margin-left: 20px;
+                                }
+
+                                a:hover{
+                                    color: red;
+                                    transition: 0.3s;
+                                }
+
+                                a{
+                                    color: #1f2021;
+                                    font-weight: 700;
+                                }
+
+                            }
+
+                            .product-price{
+                                color: #ed1d24;
+                                font-weight: 700;
+                                margin-left: 120px;
+                                margin-top: -60px;
+                            }
+
+                            .product-price span{
+                                text-decoration: line-through;
+                                color: #8f8f8f;
+                                font-weight: 400;
                             }
                         }
                     }
                 }
+
+                .sidebar-banner{
+                    overflow: hidden;
+                    background-position: center center;
+                    transition: 0.3s;
+                }
+
+                .sidebar-banner:hover .sidebar-banner-img {
+                    -ms-transform: scale(1.2);
+                    -webkit-transform: scale(1.2);
+                    transform: scale(1.2);
+                    overflow: hidden;
+                    transition: 0.3s;
+                  }
+
+                .sidebar-banner-img{
+                    transition: 0.3s;
+                }
             }
     
             .main-content{
-                background-color: blue;
+                // background-color: blue;
                 width: 75%;
                 height: 1000px;
             }
