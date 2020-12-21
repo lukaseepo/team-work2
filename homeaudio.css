@@ -520,9 +520,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .content .container .content-items .main-content {
-  background-color: blue;
   width: 75%;
-  height: 1000px;
 }
 
 .content .container .content-items .main-content .content-filter {
@@ -534,6 +532,7 @@ input[type="checkbox"]:checked:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .content .container .content-items .main-content .content-filter .bar-flex {
@@ -596,5 +595,57 @@ input[type="checkbox"]:checked:after {
   padding: 5px 15px;
   padding-right: 25px;
   border: 1px solid #ebebeb;
+}
+
+.content .container .content-items .main-content .content-product-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item {
+  width: 30%;
+  height: 460px;
+  border: 1px solid #ebebeb;
+  margin-bottom: 30px;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .content-product-image {
+  width: 100%;
+  height: 73%;
+  background-position: center center;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .product-margin {
+  margin: 30px;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .product-margin .content-product-stars {
+  color: #c2c2c2;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .product-margin .content-product-title {
+  margin-top: 10px;
+  color: #212529;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .product-margin .content-product-title:hover {
+  color: red;
+  text-replace: 0.2s;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .product-margin .content-product-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ed1d24;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=homeaudio.css.map */
