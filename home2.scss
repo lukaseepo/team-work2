@@ -327,14 +327,14 @@ $text-grey:#8f8f8f;
             @include background-cover();
             transition: 0.5s;
 
-            &:hover {
-                transform: scale(1.3);
+            &:hover img{
+                transform: scale(1.1);
             }
 
             img{
                 width: 760px;
                 height: 760px;
-                transition: 0.5s;
+                transition: 0.5s
             }
         }
 
@@ -345,3 +345,202 @@ $text-grey:#8f8f8f;
         }
     }
 }
+
+
+// product-list-section
+
+.product-list-section{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .section-items{
+        width: 100%;
+        @include column();
+
+        .product-tabs{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            ul{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style-type: none;
+                
+
+                li{
+                    list-style: none;
+                    margin: 25px;
+                    width: 135px;
+                    height: 24px;
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    text-transform: capitalize;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    a{
+                        color: #666;
+                        transition: 0.5s;
+
+                        &:hover{
+                            color: $red;
+                        }
+                    }
+
+                    &:nth-child(1){
+                        background-color: $red;
+
+                        a{
+                            color: white;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .product-list-cards{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .card{
+                width: 280px;
+                height: 440px;
+                margin: 15px;
+                @include column();
+                position: relative;
+                transition: 0.5s;
+
+                &:hover .card-add{
+                    display: block;
+                }
+
+                .card-img{
+                    width: 100%;
+                    height: 300px;
+                    @include background-cover();
+                    transition: 0.5s;
+                }
+
+                .card-add{
+                    width: 40px;
+                    height: 65px;
+                    padding-bottom: 25px;
+                    display: none;
+                    transition: 0.5s;
+
+                    .card-add-bttn{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                        color: $text-grey;
+                        position: absolute;
+                        top: 250px;
+                        right: 10px;
+                        background-color: white;
+                        font-weight: 300;
+                        transition: 0.5s;
+
+                        &:hover{
+                            background-color: $red;
+                            color: white;
+                        }
+                    }
+                }
+
+                .on-sale{
+                    width: 75px;
+                    height: 22px;
+                    border: 1px solid $red;
+                    color: $red;
+                    position: absolute;
+                    top: 20px;
+                    left: 15px;
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .on-sale-small{
+                    width: 55px;
+                    height: 22px;
+                    border: 1px solid $red;
+                    color: $red;
+                    position: absolute;
+                    top: 20px;
+                    left: 15px;
+                    font-size: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+
+                .card-content{
+                    width: 100%;
+                    height: 130px;
+                    border: 1px solid #ebebeb;
+                    border-top: 0px;
+                    padding: 10px;
+
+                    .card-review{
+                        margin-top: 20px;
+                        margin-left: 10px;
+                        width: 100%;
+                        display: flex;
+                        color: $text-grey;
+                        font-size: 12px;    
+                    }
+
+                    .card-name{
+                        width: 100%;
+                        margin-top: 10px;
+                        margin-left: 10px;
+
+                        a{
+                            color: $black;
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-transform: capitalize;
+                            transition: 0.5s;
+
+                            &:hover{
+                                color: $red;
+                            }
+                        }
+                    }
+
+                    .card-price{
+                        width: 100%;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                        color:$red;
+                        font-size: 16px;
+                        font-weight: 800;
+
+                        span{
+                            color: $text-grey;
+                            font-weight: 500;
+                            text-decoration: line-through;
+                            padding-right: 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
