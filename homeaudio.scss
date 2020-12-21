@@ -511,9 +511,71 @@ input[type="checkbox"]:checked:after {
             }
     
             .main-content{
-                // background-color: blue;
+                background-color: blue;
                 width: 75%;
                 height: 1000px;
+
+                .content-filter{
+                    height: 50px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+
+                    .bar-flex{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 320px;
+
+                        .costumsize-bar{
+                            width: 100px;
+                            height: 40px;
+                            border: 1px solid #ebebeb;
+                            
+                            .fa{
+                                margin: 10px;
+                                margin-left: 8px;
+                                position: relative;
+                                left: 5px;
+                            }
+
+                            .fa-th{
+                                border-right: 0.5px solid #ebebeb;
+                                position: relative;
+                                width: 35px;
+                            }
+                        }
+
+                        .results-bar{
+                            font-size: 15px;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: #666;
+                            margin-top: 13px;
+                        }
+                    }
+
+                    .content-arrangement{
+                        display: flex;
+                        width: 230px;
+                        justify-content: space-between;
+
+                        .arraingment-title{
+                            font-size: 15px;
+                            font-weight: 400;
+                            font-style: normal;
+                            color: #666;
+                            margin-top: 13px;
+                        }
+
+                        select{
+                            height: 40px;
+                            padding: 5px 15px;
+                            padding-right: 25px;
+                            border: 1px solid #ebebeb;
+                        }
+                    }
+
+                }
             }
         }
     }

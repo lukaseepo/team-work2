@@ -520,7 +520,81 @@ input[type="checkbox"]:checked:after {
 }
 
 .content .container .content-items .main-content {
+  background-color: blue;
   width: 75%;
   height: 1000px;
+}
+
+.content .container .content-items .main-content .content-filter {
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .container .content-items .main-content .content-filter .bar-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 320px;
+}
+
+.content .container .content-items .main-content .content-filter .bar-flex .costumsize-bar {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #ebebeb;
+}
+
+.content .container .content-items .main-content .content-filter .bar-flex .costumsize-bar .fa {
+  margin: 10px;
+  margin-left: 8px;
+  position: relative;
+  left: 5px;
+}
+
+.content .container .content-items .main-content .content-filter .bar-flex .costumsize-bar .fa-th {
+  border-right: 0.5px solid #ebebeb;
+  position: relative;
+  width: 35px;
+}
+
+.content .container .content-items .main-content .content-filter .bar-flex .results-bar {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: #666;
+  margin-top: 13px;
+}
+
+.content .container .content-items .main-content .content-filter .content-arrangement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 230px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .container .content-items .main-content .content-filter .content-arrangement .arraingment-title {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: #666;
+  margin-top: 13px;
+}
+
+.content .container .content-items .main-content .content-filter .content-arrangement select {
+  height: 40px;
+  padding: 5px 15px;
+  padding-right: 25px;
+  border: 1px solid #ebebeb;
 }
 /*# sourceMappingURL=homeaudio.css.map */
