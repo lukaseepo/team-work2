@@ -2,26 +2,524 @@
 <html>
 <link rel="stylesheet" href="./home.css">
 
+<head>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <body>
     <section class="menu-section">
         <div class="container">
             <div class="menu-items">
-                <div class=""></div>
+                <div class="menu-item">
+                    <h5>Email:</h5>
+                    <a href=""> email@email.com
+                    </a>
+                    <div class="item"></div>
+                    <h5>Today's Deal:</h5>
+                    <span>Sale Off 50%</span>
+                </div>
+                <ul class="tracking">
+                    <li><a href="">Order Tracking</a></li>
+                    <li class="currencies">
+                        USD <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <ul class="currency">
+                            <li class="usa">USD</li>
+                            <li>EUR</li>
+                        </ul>
+                        <ul class="line"></ul>
+                    </li>
+                    <li class="language">
+                        English <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        <ul class="item">
+                            <li class="eng">English</li>
+                            <li>Francis</li>
+                        </ul>
+                        <span class="line"></span>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
-    <section class="red-section">
+    <header class="header-section">
         <div class="container">
-            <div class="items">
-                <div class="item">
-                    <div class="animacion">
-                        <span class="ring"></span>
-                        <div class="image" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/files/phone-banner-3.png?v=1589650412);"></div>
-
+            <div class="header-items">
+                <div class="logo">
+                    <img width="150px" src="https://cdn.shopify.com/s/files/1/0282/2858/3562/files/logo.png?v=1588906890" alt="">
+                </div>
+                <div class="search">
+                    <ul class="search-item">
+                        <li class="border">
+                            All <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            <ul class="products">
+                                <li class="all">All</li>
+                                <li> <a href=""> Product</a></li>
+                                <li> <a href=""> Blog</a></li>
+                                <li class="page"> <a href="">Page</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form action="/url">
+                        <input type="text" placeholder="Search Our Store">
+                    </form>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </div>
+                <ul class="user-place">
+                    <li><i class="fa fa-user" aria-hidden="true"></i>
+                        <ul class="user-item">
+                            <li class="sign-in"><a href="">Sign in</a></li>
+                            <li><a href="">Sign up</a></li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <ul class="user">
+                            Your cart is currently empty.
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="category-section">
+        <div class="container">
+            <div class="category-items">
+                <ul class="category">
+                    <li><i class="fa fa-bars" aria-hidden="true"></i>
+                        <h3>Browse Categories</h3>
+                        <ul class="category-item">
+                            <li><a href="">HOME</a><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                <ul class="home">
+                                    <li class="home-item">
+                                        <a href="">HOME 1</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 2</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 3</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 4</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 5</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 6</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 7</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 8</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 9</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 10</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 11</a>
+                                    </li>
+                                    <li class="home-item">
+                                        <a href="">HOME 12</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">CATALOG</a><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                <ul class="catalog">
+                                    <li class="item">
+                                        <a href="">Categories page</a>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <ul class="catalog-item">
+                                            <li>
+                                                <a href="">Audio & Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Home & Garden</a>
+                                            </li>
+                                            <li>
+                                                <a href="">SmartPhone & Ipad</a>
+                                            </li>
+                                            <li class="game">
+                                                <a href="">Viedo & Game</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="product">
+                                        <a href="">Product page</a>
+                                        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                        <ul class="product-item">
+                                            <li>
+                                                <a href="">My Account</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Contact Us</a>
+                                            </li>
+                                            <li class="about">
+                                                <a href="">About Us</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">BLOG</a></li>
+                            <li><a href="">PAGE</a><i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                <ul class="pages">
+                                    <li>
+                                        <a href="">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Refund Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="">FAQs</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="">CONTACT</a></li>
+                            <li class="store"><a href="">STORES</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav-bar">
+                    <li>
+                        <a href="">HOME</a>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <ul class="home">
+                            <li class="home-item">
+                                <a href="">HOME 1</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 2</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 3</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 4</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 5</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 6</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 7</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 8</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 9</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 10</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 11</a>
+                            </li>
+                            <li class="home-item">
+                                <a href="">HOME 12</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">CATALOG</a>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <ul class="catalog">
+                            <li>
+                                <ul class="page">
+                                    <li><a class="page-item" href="">CATEGORIES PAGE</a></li>
+                                    <li><a href="">Audio & Home</a></li>
+                                    <li><a href="">Home & Garden</a></li>
+                                    <li><a href="">SmartPhone & Ipad</a></li>
+                                    <li><a class="game" href="">Video & Game</a></li>
+                                </ul>
+                                <ul class="page">
+                                    <li><a class="page-item" href="">Product Page</a></li>
+                                    <li><a href="">My account</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a class="game" href="">About Us</a></li>
+                                </ul>
+                                <ul class="new-product">
+                                    <li><a href="">New Products</a></li>
+                                    <li class="sale">
+                                        <ul class="img-item">
+                                            <img width="60px" height="60px" src="https://cdn.shopify.com/s/files/1/0282/2858/3562/products/Image-8_300x.jpg?v=1606185928" alt="">
+                                        </ul>
+                                        <ul class="info">
+                                            <li><a href="">Gascon Watch 2021</a></li>
+                                            <li class="money">
+                                                <h3>€83,95</h3>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sale">
+                                        <img width="60px" height="60px" src="./imgs/Image-4_370x.webp" alt="">
+                                        <ul class="info">
+                                            <li><a href="">Cara Cig. All Black</a></li>
+                                            <li class="money">
+                                                <h3><span><del>€247,95</del></span> €83,95</h3>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="sale">
+                                        <img width="60px" height="60px" src="./imgs/Image-3_370x.webp" alt="">
+                                        <ul class="info">
+                                            <li><a href="">Bitsie Pumps</a></li>
+                                            <li class="money">
+                                                <h3><span><del>€82,95</del></span> €70,95</h3>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <ul class="game-item">
+                                    <img width="250px" height="250px" src="https://cdn.shopify.com/s/files/1/0282/2858/3562/files/menu-banner.jpg?v=1603272108" alt="">
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="">PAGE</a>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        <ul class="pages">
+                            <li>
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Refund Policy</a>
+                            </li>
+                            <li>
+                                <a href="">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="">FAQs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="">STORES</a>
+                    </li>
+                </ul>
+                <div class="shipping">
+                    <div class="ship-item">
+                        <img width="30px" height="30px" src="https://cdn.shopify.com/s/files/1/0282/2858/3562/files/free-shipping.svg?v=1588932184" alt="">
+                        <h5>Free Shipping</h5>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
+    <section class="slider-section" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/files/dimital-slider-2_1512x.jpg?v=1603097807);">
+        <div class="container">
+            <div class="slider-items">
+                <div class="info">
+                    <h2>
+                        Up to 40% Off <br> Speakers </h2>
+                    <p>
+                        Vero homero perfecto mei ut, sonet aperiam an nec. <br> Ni nec dicta alter legim us. Me vita legendos ex pet en dis ad.
+                    </p>
+                    <a href="">SHOP NOW</a>
+                </div>
+                <div class="arrow-left">
+                    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                </div>
+                <div class="arrow-right">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product-types-section">
+        <div class="container">
+            <div class="items">
+                <a href="#" class="item">
+                    <div class="product-type-img" style="background-image: url(./imgs/category-1_180x.webp);"></div>
+                    <div class="product-type-title">Audio & Home</div>
+                </a>
+                <a href="#" class="item">
+                    <div class="product-type-img" style="background-image: url(./imgs/category-2_180x.webp);"></div>
+                    <div class="product-type-title">Home & Garden</div>
+                </a>
+                <a href="#" class="item">
+                    <div class="product-type-img" style="background-image: url(./imgs/category-3_180x.webp);"></div>
+                    <div class="product-type-title">SmartPhone & Ipad</div>
+                </a>
+                <a href="#" class="item">
+                    <div class="product-type-img" style="background-image: url('./imgs/category-4_180x.jpg');"></div>
+                    <div class="product-type-title">Technologies</div>
+                </a>
+                <a href="#" class="item">
+                    <div class="product-type-img" style="background-image: url('./imgs/category-4_3d7215ab-4264-42e0-b49f-68131c721a81_180x.webp');"></div>
+                    <div class="product-type-title">Video & Game</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-items">
+                <div class="title">
+                    <h3>Featured products</h3>
+                    <div class="title-item">
+                        <div class="line"></div>
+                        <img width="30px" height="30px" src="https://cdn.shopify.com/s/files/1/0282/2858/3562/files/title-bg-icon.png?v=1589299508" alt="">
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="featured-item">
+                    <div class="item">
+                        <div class="feature" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/products/Image-8_370x.jpg?v=1606185928);">
+                            <div class="circle">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="stars">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                            </div>
+                            <a href="">Gascon Watch 2021</a>
+                            <h5>€124,95</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feature" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/products/Image-4_370x.jpg?v=1606185762);">
+                            <div class="sale">
+                                -€164
+                            </div>
+                            <div class="circle">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="stars">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <a href="">Cara Cig. All Black1</a>
+                            <h5><span> <del>€246,95</del> </span> €124,95</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feature" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/products/Image-3_370x.jpg?v=1606185707);">
+                            <div class="sale">
+                                -€13
+                            </div>
+                            <div class="circle">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="stars">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <a href="">Bitsie Pumps</a>
+                            <h5><span> <del>€82,95</del> </span> €69,95</h5>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="feature" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/products/Image-2_370x.jpg?v=1606185672);">
+                            <div class="circle">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <div class="stars">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </div>
+                            <a href="">Bitsie Pumps</a>
+                            <h5>€33,95</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="time-section" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/files/countdown-bg.jpg?v=1589612507);">
+        <div class="container">
+            <div class="time-items">
+                <div class="item">
+                    09
+                    <h5>DAYS</h5>
+                </div>
+                <div class="item">
+                    01
+                    <h5>HOURS</h5>
+                </div>
+                <div class="item">
+                    55
+                    <h5>MINS</h5>
+                </div>
+                <div class="item">
+                    19
+                    <h5>SECS</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sound-section">
+        <div class="container">
+            <div class="sound-items">
+                <div class="info">
+                    <h3>DOLBY ATMOS <br> SOUND FEATURE</h3>
+                    <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. <span><a href="">Read More</a></span>.</p>
+                    <div class="circles">
+                        <div class="circle">
+                            <i class="fa fa-bluetooth-b" aria-hidden="true"></i>
+                            <h5>Bluetooth Enabled device</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa fa-wifi" aria-hidden="true"></i>
+                            <h5>Wireless Connections</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa fa-battery-empty" aria-hidden="true"></i>
+                            <h5>Rechargeable Battery</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa fa-volume-up" aria-hidden="true"></i>
+                            <h5>Surround Sound System</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-animation" style="background-image: url(https://cdn.shopify.com/s/files/1/0282/2858/3562/files/phone-banner-2.png?v=1589650207);">
+                    <div class="item">
+                        <img width="285px" height="328px" src="https://cdn.shopify.com/s/files/1/0282/2858/3562/files/phone-banner-1.png?v=1589649218" alt="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
