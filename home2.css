@@ -378,14 +378,36 @@
 
 .banners-section .items {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   margin-top: 50px;
 }
 
-.banners-section .items .big-banner {
-  width: 760px;
+@media only screen and (max-width: 1024px) {
+  .banners-section .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.banners-section .items .big-item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banners-section .items .big-item .big-banner {
+  width: 100%;
+  height: 100%;
+}
+
+.banners-section .items .big-item .big-banner .big-banner-image {
+  width: 100%;
   height: 760px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -394,24 +416,92 @@
   transition: 0.5s;
 }
 
-.banners-section .items .big-banner:hover img {
+@media only screen and (max-width: 1024px) {
+  .banners-section .items .big-item .big-banner .big-banner-image {
+    height: 850px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banners-section .items .big-item .big-banner .big-banner-image {
+    height: 750px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .banners-section .items .big-item .big-banner .big-banner-image {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .banners-section .items .big-item .big-banner .big-banner-image {
+    height: 350px;
+  }
+}
+
+.banners-section .items .big-item .big-banner:hover .big-banner-image {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.banners-section .items .big-banner img {
-  width: 760px;
-  height: 760px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+.banners-section .items .small-item {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  overflow: hidden;
 }
 
-.banners-section .items .small-banner {
-  width: 380px;
+@media only screen and (max-width: 520px) {
+  .banners-section .items .small-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.banners-section .items .small-item .small-banner {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.banners-section .items .small-item .small-banner .small-banner-image {
+  width: 100%;
   height: 760px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .banners-section .items .small-item .small-banner .small-banner-image {
+    height: 850px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banners-section .items .small-item .small-banner .small-banner-image {
+    height: 750px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .banners-section .items .small-item .small-banner .small-banner-image {
+    height: 900px;
+  }
+}
+
+.banners-section .items .small-item .small-banner:hover .small-banner-image {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .product-list-section {
@@ -449,6 +539,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -458,6 +550,7 @@
 .product-list-section .section-items .product-tabs ul li {
   list-style: none;
   margin: 25px;
+  margin-bottom: 0px;
   width: 135px;
   height: 24px;
   font-size: 15px;
@@ -473,6 +566,22 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .product-list-section .section-items .product-tabs ul li {
+    margin: 10px;
+    width: 100px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .product-list-section .section-items .product-tabs ul li {
+    margin: 10px;
+    width: 90px;
+    font-size: 12px;
+  }
 }
 
 .product-list-section .section-items .product-tabs ul li a {
@@ -503,6 +612,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 30px;
 }
 
 .product-list-section .section-items .product-list-cards .card {
@@ -658,5 +768,79 @@
   font-weight: 500;
   text-decoration: line-through;
   padding-right: 3px;
+}
+
+.featured-banners-section {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.featured-banners-section .items {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media only screen and (max-width: 820px) {
+  .featured-banners-section .items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.featured-banners-section .items .item {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.featured-banners-section .items .item .banner-img {
+  width: 100%;
+  height: 380px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .featured-banners-section .items .item .banner-img {
+    height: 280px;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .featured-banners-section .items .item .banner-img {
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .featured-banners-section .items .item .banner-img {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .featured-banners-section .items .item .banner-img {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .featured-banners-section .items .item .banner-img {
+    height: 280px;
+  }
+}
+
+.featured-banners-section .items .item:hover .banner-img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=home2.css.map */
