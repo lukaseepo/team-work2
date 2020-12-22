@@ -843,4 +843,53 @@
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+.brands-section {
+  width: 100%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.brands-section .items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.brands-section .items .item {
+  width: 210px;
+  height: 144px;
+  border: 1px solid #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 460px) {
+  .brands-section .items .item {
+    margin-top: 20px;
+  }
+}
+
+.brands-section .items .item:hover img {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.brands-section .items .item img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=home2.css.map */
