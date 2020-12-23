@@ -300,6 +300,7 @@ a {
   position: relative;
   border-right: 2px solid #ebebeb;
   padding-right: 20px;
+  color: #666;
 }
 
 .header-section .header-items .search .search-item .border:hover .products {
@@ -370,7 +371,7 @@ a {
 
 .header-section .header-items .search i {
   color: #1b1b1b;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .header-section .header-items .user-place {
@@ -489,6 +490,7 @@ a {
   position: relative;
   height: 44px;
   width: 250px;
+  padding-top: 8px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -511,7 +513,7 @@ a {
 
 .category-section .category-items .category li h3 {
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   padding-left: 20px;
 }
 
@@ -538,7 +540,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 15px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   height: 41.5px;
   padding-top: 15px;
   padding-right: 10px;
@@ -769,7 +771,8 @@ a {
 
 .category-section .category-items .nav-bar li a {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
   margin-left: 40px;
 }
 
@@ -804,7 +807,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #666;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   height: 35px;
   padding-top: 9px;
 }
@@ -850,7 +854,7 @@ a {
 
 .category-section .category-items .nav-bar li .catalog li .page li a {
   width: 100%;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   padding-top: 10px;
   color: #666;
 }
@@ -951,7 +955,7 @@ a {
 }
 
 .category-section .category-items .nav-bar li .pages li {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   padding-top: 15px;
 }
 
