@@ -771,14 +771,14 @@ a {
 }
 
 .category-section .category-items .nav-bar li .catalog li .page:nth-child(2) {
-  margin-left: 40px;
+  margin-left: 10px;
 }
 
 .category-section .category-items .nav-bar li .catalog li .page li a {
   width: 100%;
   border-bottom: 1px solid #666;
-  padding-top: 5px;
-  color: #ebebeb;
+  padding-top: 10px;
+  color: #666;
 }
 
 .category-section .category-items .nav-bar li .catalog li .page li a:hover {
@@ -878,7 +878,7 @@ a {
 
 .category-section .category-items .nav-bar li .pages li {
   border-bottom: 1px solid #666;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .category-section .category-items .nav-bar li .pages li:hover a {
