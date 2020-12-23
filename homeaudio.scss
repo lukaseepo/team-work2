@@ -594,6 +594,36 @@ input[type="checkbox"]:checked:after {
                             background-size: cover;
                             background-position: center;
                             background-repeat: no-repeat;
+                            overflow: hidden;
+
+                            &:hover{
+                
+                                    .card-add-bttn{
+                                        width: 40px;
+                                        height: 40px;
+                                        border-radius: 100%;
+                                        border: none;
+                                        outline: none;
+                                        cursor: pointer;
+                                        color: gray;
+                                        margin: 260px;
+                                        background-color: white;
+                                        font-weight: 300;
+                                        &:hover{
+                                            background-color: red;
+                                            color: white;
+                                        }
+                                    }
+                            }
+
+                            .card-add{
+                                width: 40px;
+                                height: 65px;
+                                padding-bottom: 25px;
+                                // display: none;
+                                margin-left: -20px;
+                                float: left;
+                            }
 
                             .product-sale{
                                 color: red;
@@ -607,6 +637,7 @@ input[type="checkbox"]:checked:after {
                                 top: 15px;
                                 left: 15px;
                             }
+
                         }
 
                         .product-margin{
@@ -625,7 +656,6 @@ input[type="checkbox"]:checked:after {
 
                             .content-product-title:hover{
                                 color: red;
-                                text-replace: 0.2s;
                             }
 
                             .content-product-price{

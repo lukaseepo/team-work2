@@ -621,6 +621,33 @@ input[type="checkbox"]:checked:after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .content-product-image:hover .card-add-bttn {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: gray;
+  margin: 260px;
+  background-color: white;
+  font-weight: 300;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .content-product-image:hover .card-add-bttn:hover {
+  background-color: red;
+  color: white;
+}
+
+.content .container .content-items .main-content .content-product-items .content-product-item .content-product-image .card-add {
+  width: 40px;
+  height: 65px;
+  padding-bottom: 25px;
+  margin-left: -20px;
+  float: left;
 }
 
 .content .container .content-items .main-content .content-product-items .content-product-item .content-product-image .product-sale {
@@ -654,7 +681,6 @@ input[type="checkbox"]:checked:after {
 
 .content .container .content-items .main-content .content-product-items .content-product-item .product-margin .content-product-title:hover {
   color: red;
-  text-replace: 0.2s;
 }
 
 .content .container .content-items .main-content .content-product-items .content-product-item .product-margin .content-product-price {
