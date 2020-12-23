@@ -13,6 +13,14 @@
     @media only screen and (max-width: 1510px) {
         width: 90%;
     }
+
+    @media only screen and (max-width: 767px){
+        width: 75%;
+    }
+
+    @media only screen and (max-width: 550px){
+        width:  100%;
+    }
 }
 
 a:hover{
@@ -61,6 +69,12 @@ input[type="checkbox"]:checked:after {
             border-bottom: 1px solid #ebebeb;
             margin-bottom: 45px;
 
+            @media only screen and (max-width: 400px){
+                display: grid;
+                grid-template-columns: 1fr;
+                height: 80px;
+            }
+
             .top-pages{
                 color: #666;
                 font-size: 14px;
@@ -94,6 +108,10 @@ input[type="checkbox"]:checked:after {
 
             .left-bar{
                 width: 25%;
+
+                @media only screen and (max-width: 1025px){
+                    display: none;
+                }
 
 
                 .categories{
@@ -416,7 +434,6 @@ input[type="checkbox"]:checked:after {
 
                 .products{
                     width: 90%;
-                    height: 430px;
                     margin-bottom: 40px;
 
                     .products-title{
@@ -442,9 +459,13 @@ input[type="checkbox"]:checked:after {
                         }
                         
                     .product-items{
-
+                        display: flex;
+                        flex-wrap: wrap;
                         .product-item{
-                            margin-bottom: 70px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin-top: 10px;
+                            
                             .product-flex{
                                 display: flex;
                                 
@@ -513,6 +534,10 @@ input[type="checkbox"]:checked:after {
             .main-content{
                 width: 75%;
 
+                @media only screen and (max-width: 1025px){
+                    width: 100%;
+                }
+                    
                 .content-filter{
                     height: 50px;
                     width: 100%;
@@ -520,27 +545,65 @@ input[type="checkbox"]:checked:after {
                     justify-content: space-between;
                     margin-bottom: 30px;
 
+                    @media only screen and (max-width: 400px){
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+
                     .bar-flex{
                         display: flex;
                         justify-content: space-between;
-                        width: 320px;
+
+                        @media only screen and (max-width: 337px){
+                            width: 150px;
+                        }
 
                         .costumsize-bar{
                             width: 100px;
                             height: 40px;
                             border: 1px solid #ebebeb;
                             
+                            @media only screen and (max-width: 1025px){
+                                width: 100px;
+                                height: 40px;
+                                border: 1px solid #ebebeb;
+                            }
+
+                            .filter-text{
+                                display: none;
+
+                                @media only screen and (max-width: 1025px){
+
+                                    display: flex;
+                                    color: #1f2021;
+                                    margin-top: 10px;
+
+                                    .fa{
+
+                                        margin-top: 1px;
+                                    }
+                                }
+                            }
+
                             .fa{
                                 margin: 10px;
                                 margin-left: 8px;
                                 position: relative;
                                 left: 5px;
+                                
                             }
 
                             .fa-th{
                                 border-right: 0.5px solid #ebebeb;
                                 position: relative;
                                 width: 35px;
+                            }
+
+                            .fa-th, .fa-bars{
+
+                                @media only screen and (max-width: 1025px){
+                                    display: none;
+                                }
                             }
                         }
 
@@ -550,6 +613,10 @@ input[type="checkbox"]:checked:after {
                             font-style: normal;
                             color: #666;
                             margin-top: 13px;
+
+                            @media only screen and (max-width: 767px){
+                                display: none;
+                            }
                         }
                     }
 
@@ -558,12 +625,30 @@ input[type="checkbox"]:checked:after {
                         width: 230px;
                         justify-content: space-between;
 
+                        @media only screen and (max-width: 767px){
+                            margin-left: 200px;       
+                        }
+
+                        @media only screen and (max-width: 650px){
+                            margin-left: auto;
+                        }
+
+                        @media only screen and (max-width: 400px){
+                            margin-left: -5px;
+                            width: 50px;
+                        }
+
                         .arraingment-title{
                             font-size: 15px;
                             font-weight: 400;
                             font-style: normal;
                             color: #666;
                             margin-top: 13px;
+
+                            @media only screen and (max-width: 767px){
+                                display: none;
+                            }
+
                         }
 
                         select{
@@ -581,12 +666,26 @@ input[type="checkbox"]:checked:after {
                     flex-wrap: wrap;
                     justify-content: space-between;
 
+                    @media only screen and (max-width: 767px){
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                    }
+
                     .content-product-item{
 
                         width: 30%;
                         height: 460px;
                         border: 1px solid #ebebeb;
                         margin-bottom: 30px;
+
+                        @media only screen and (max-width: 767px){
+                            width:  97%;
+                        }
+
+                        @media only screen and (max-width: 337px){
+                            height: 580px;
+                        }
+                        
 
                         .content-product-image{
                             width: 100%;
