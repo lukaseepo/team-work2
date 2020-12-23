@@ -1,0 +1,105 @@
+.top-bar {
+    width: 100%;
+    height: max-content;
+    padding: 10px 40px;
+    background-color: $red;
+    .items {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .title {
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                white-space: nowrap;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+        .wrapper {
+            width: 500px;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            .input {
+                width: max-content;
+                height: max-content;
+                input {
+                    width: 368px;
+                    height: 45px;
+                    padding: 6px 20px;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .button {
+            button {
+                width: 112px;
+                height: 42px;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 20px;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $white;
+                background-color: $red;
+                transition: 0.5s;
+                &:hover {
+                    background-color: $black;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .social-icons {
+            width: 150px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: 1s;
+            .fa {
+                color: $white;
+                font-size: 14px;
+                margin-right: 15px;
+                &:hover {
+                    margin-bottom: 8px;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    padding: 90px 0 60px;
+    background-color: $black2;
+    .items {
+        width: 100%;
+        justify-content: space-between;
+        .item {
+            width: 33%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @mixin title {
+                font-size: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $white;
+            }
+            .info {
+                width: max-content;
+                height: 100%;
+                h4 {
+                    @include title;
+                }
+            }
+        }
+    }
+}
