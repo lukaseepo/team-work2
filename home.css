@@ -2023,7 +2023,8 @@ a {
 
 .red-section {
   width: 100%;
-  height: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #ed1d24;
 }
 
@@ -2035,28 +2036,30 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 110.5px;
   align-items: center;
-  position: relative;
 }
 
 .red-section .items .item {
-  width: 50%;
-  height: 328px;
+  width: 650px;
+  height: 450px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.red-section .items .item:nth-child(1) {
+  padding-left: 150px;
 }
 
 .red-section .items .item .animation {
-  width: 250px;
-  height: 250px;
+  height: 450px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2064,13 +2067,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
   z-index: 1;
-  margin-left: 30px;
-  margin: -10px 0 0 10px;
 }
 
 .red-section .items .item .animation span {
@@ -2127,7 +2125,7 @@ a {
 }
 
 .red-section .items .title {
-  width: 330px;
+  width: 350px;
 }
 
 .red-section .items .title h3 {
@@ -2135,28 +2133,27 @@ a {
   color: #fff;
   font-family: Rubik, sans-serif;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.red-section .items .text {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 .red-section .items .text p {
   color: #fff;
   line-height: 1.8;
-  width: 780px;
-  height: 108px;
-  margin-bottom: 1rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
+  font-size: 15px;
 }
 
 .estimates {
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .estimates .top-line {
