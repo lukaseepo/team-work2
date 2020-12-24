@@ -302,6 +302,7 @@ a {
   position: relative;
   border-right: 2px solid #ebebeb;
   padding-right: 20px;
+  color: #666;
 }
 
 .header-section .header-items .search .search-item .border:hover .products {
@@ -372,7 +373,7 @@ a {
 
 .header-section .header-items .search i {
   color: #1b1b1b;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .header-section .header-items .user-place {
@@ -491,6 +492,7 @@ a {
   position: relative;
   height: 44px;
   width: 250px;
+  padding-top: 8px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -513,7 +515,7 @@ a {
 
 .category-section .category-items .category li h3 {
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   padding-left: 20px;
 }
 
@@ -540,7 +542,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 15px;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   height: 41.5px;
   padding-top: 15px;
   padding-right: 10px;
@@ -771,7 +773,8 @@ a {
 
 .category-section .category-items .nav-bar li a {
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
+  font-weight: 600;
   margin-left: 40px;
 }
 
@@ -806,7 +809,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid #666;
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   height: 35px;
   padding-top: 9px;
 }
@@ -852,7 +856,7 @@ a {
 
 .category-section .category-items .nav-bar li .catalog li .page li a {
   width: 100%;
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   padding-top: 10px;
   color: #666;
 }
@@ -953,7 +957,7 @@ a {
 }
 
 .category-section .category-items .nav-bar li .pages li {
-  border-bottom: 1px solid #666;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.5);
   padding-top: 15px;
 }
 
@@ -2027,7 +2031,8 @@ a {
 
 .red-section {
   width: 100%;
-  height: auto;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #ed1d24;
 }
 
@@ -2047,23 +2052,39 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
   position: relative;
 }
 
 .red-section .items .item {
   width: 100%;
   height: 328px;
+=======
+  align-items: center;
+}
+
+.red-section .items .item {
+  width: 650px;
+  height: 450px;
+>>>>>>> f901db5c4b37b6324d93867b6829eff567afe378
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.red-section .items .item:nth-child(1) {
+  padding-left: 150px;
 }
 
 .red-section .items .item .animation {
-  width: 250px;
-  height: 250px;
+  height: 450px;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2071,13 +2092,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: relative;
   z-index: 1;
-  margin-left: 30px;
-  margin: -10px 0 0 10px;
 }
 
 .red-section .items .item .animation span {
@@ -2139,16 +2155,25 @@ a {
   z-index: 2;
 }
 
+<<<<<<< HEAD
 .red-section .items .item .title h3 {
+=======
+.red-section .items .title {
+  width: 350px;
+}
+
+.red-section .items .title h3 {
+>>>>>>> f901db5c4b37b6324d93867b6829eff567afe378
   margin: 0 0 30px;
   color: #fff;
   font-family: Rubik, sans-serif;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 .red-section .items .item .text p {
   color: #fff;
   line-height: 1.8;
@@ -2158,12 +2183,24 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+=======
+.red-section .items .text {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.red-section .items .text p {
+  color: #fff;
+  line-height: 1.8;
+  font-size: 15px;
+>>>>>>> f901db5c4b37b6324d93867b6829eff567afe378
 }
 
 .estimates {
   width: 100%;
   height: auto;
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .estimates .top-line {

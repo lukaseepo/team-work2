@@ -241,6 +241,7 @@ a {
                     position: relative;
                     border-right: 2px solid $grey2;
                     padding-right: 20px;
+                    color: #666;
                     &:hover .products {
                         display: flex;
                     }
@@ -291,7 +292,7 @@ a {
             }
             i {
                 color: $black;
-                font-size: 20px;
+                font-size: 17px;
             }
         }
         .user-place {
@@ -370,6 +371,7 @@ a {
                 position: relative;
                 height: 44px;
                 width: 250px;
+                padding-top: 8px;
                 @media screen and(max-width: 1300px) {
                     width: 100%;
                 }
@@ -383,7 +385,7 @@ a {
                 }
                 h3 {
                     color: $white;
-                    font-size: 15px;
+                    font-size: 14px;
                     padding-left: 20px;
                 }
                 .category-item {
@@ -400,7 +402,7 @@ a {
                         display: flex;
                         justify-content: space-between;
                         padding-left: 15px;
-                        border-bottom: 1px solid $grey;
+                        border-bottom: 1px solid rgba(235,235,235,0.5);
                         height: 41.5px;
                         padding-top: 15px;
                         padding-right: 10px;
@@ -551,6 +553,7 @@ a {
                 padding-top: 5px;
                 position: relative;
                 height: 45px;
+
                 &:hover .pages {
                     display: flex;
                 }
@@ -562,7 +565,8 @@ a {
                 }
                 a {
                     color: $white;
-                    font-size: 14px;
+                    font-size: 13px;
+                    font-weight: 600;
                     margin-left: 40px;
                 }
                 i {
@@ -584,7 +588,8 @@ a {
                     z-index: 1;
                     .home-item {
                         display: flex;
-                        border-bottom: 1px solid $grey;
+                        text-transform: capitalize;
+                        border-bottom: 1px solid rgba(235,235,235,0.5);
                         height: 35px;
                         padding-top: 9px;
                         &:nth-child(12) {
@@ -619,7 +624,7 @@ a {
                             li {
                                 a {
                                     width: 100%;
-                                    border-bottom: 1px solid $grey;
+                                    border-bottom: 1px solid rgba(235,235,235,0.5);
                                     padding-top: 10px;
                                     color: $grey;
                                     &:hover {
@@ -697,7 +702,7 @@ a {
                     flex-direction: column;
                     background-color: $white;
                     li {
-                        border-bottom: 1px solid $grey;
+                        border-bottom: 1px solid rgba(235,235,235,0.5);
                         padding-top: 15px;
                         &:hover a {
                             color: $red;
@@ -1416,34 +1421,53 @@ a {
 
 .red-section {
     width: 100%;
-    height: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
     background-color: $red;
     @media screen and (max-width: 1300px) {
         display: none;
     }
     .items {
         width: 100%;
+<<<<<<< HEAD
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 110.5px;
+=======
+        display: flex;
         align-items: center;
-        position: relative;
+        // justify-content: space-between;
+        // padding: 110.5px;
+>>>>>>> f901db5c4b37b6324d93867b6829eff567afe378
+        align-items: center;
+        // position: relative;
         .item {
+<<<<<<< HEAD
             width: 100%;
             height: 328px;
+=======
+            width: 650px;
+            height: 450px;
+>>>>>>> f901db5c4b37b6324d93867b6829eff567afe378
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: center;
+
+            &:nth-child(1){
+                padding-left: 150px;
+            }
             .animation {
-                width: 250px;
-                height: 250px;
+                // width: 250px;
+                height: 450px;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                // justify-content: center;
                 position: relative;
                 z-index: 1;
-                margin-left: 30px;
-                margin: -10px 0 0 10px;
+                // margin-left: 30px;
+                // margin: -10px 0 0 10px;
                 span {
                     width: 250px;
                     height: 250px;
@@ -1487,6 +1511,7 @@ a {
                 position: absolute;
                 z-index: 2;
             }
+<<<<<<< HEAD
             .title {
                 h3 {
                     margin: 0 0 30px;
@@ -1506,6 +1531,33 @@ a {
                     flex-direction: column;
                     position: relative;
                 }
+=======
+        }
+        .title {
+            width: 350px;
+            h3 {
+                margin: 0 0 30px;
+                color: $white;
+                font-family: Rubik, sans-serif;
+                font-size: 48px;
+                font-weight: 800;
+                line-height: 1.2;
+                text-transform: uppercase;
+            }
+        }
+        .text {
+            width: 100%;
+            margin-bottom: 1rem;
+            p {
+                color: $white;
+                line-height: 1.8;
+                font-size: 15px;
+                // width: 780px;
+                // height: 108px;
+                // margin-bottom: 1rem;
+                // flex-direction: column;
+                // position: relative;
+>>>>>>> f901db5c4b37b6324d93867b6829eff567afe378
             }
         }
     }
@@ -1514,7 +1566,8 @@ a {
 .estimates {
     width: 100%;
     height: auto;
-    margin-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     .top-line {
         width: 100%;
         display: flex;
