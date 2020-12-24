@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: Arial;
     text-decoration: none;
+    border-style: none;
+    outline-style: none;
+    border: none;
+    outline:none;
 }
 
 $black: #1b1b1b;
@@ -21,7 +25,9 @@ $white2:#f5f5f5;
 $grey4:rgba(102, 102, 102, 0.5);
 
 input{
-    border: 0
+    border: 0;
+    border-style: none;
+    outline-style: none;
 }
 
 li{

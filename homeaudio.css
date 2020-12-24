@@ -5,10 +5,16 @@
           box-sizing: border-box;
   font-family: Arial;
   text-decoration: none;
+  border-style: none;
+  outline-style: none;
+  border: none;
+  outline: none;
 }
 
 input {
   border: 0;
+  border-style: none;
+  outline-style: none;
 }
 
 li {
