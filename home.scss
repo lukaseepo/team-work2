@@ -1422,7 +1422,7 @@ a {
         align-items: center;
         position: relative;
         .item {
-            width: 50%;
+            width: 85%;
             height: 328px;
             display: flex;
             align-items: center;
@@ -1479,7 +1479,6 @@ a {
             }
         }
         .title {
-            width: 330px;
             h3 {
                 margin: 0 0 30px;
                 color: $white;
@@ -1494,7 +1493,6 @@ a {
             p {
                 color: $white;
                 line-height: 1.8;
-                width: 780px;
                 height: 108px;
                 margin-bottom: 1rem;
                 flex-direction: column;

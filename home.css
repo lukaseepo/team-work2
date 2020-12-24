@@ -2040,7 +2040,7 @@ a {
 }
 
 .red-section .items .item {
-  width: 50%;
+  width: 85%;
   height: 328px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2122,10 +2122,6 @@ a {
   z-index: 2;
 }
 
-.red-section .items .title {
-  width: 330px;
-}
-
 .red-section .items .title h3 {
   margin: 0 0 30px;
   color: #fff;
@@ -2139,7 +2135,6 @@ a {
 .red-section .items .text p {
   color: #fff;
   line-height: 1.8;
-  width: 780px;
   height: 108px;
   margin-bottom: 1rem;
   -webkit-box-orient: vertical;
@@ -2357,6 +2352,8 @@ a {
   height: max-content;
   padding: 10px 40px;
   background-color: #ed1d24;
+  position: absolute;
+  right: 0px;
 }
 
 .top-bar .items {
@@ -2390,6 +2387,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 .top-bar .items .wrapper .input {
