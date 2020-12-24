@@ -19,6 +19,15 @@ $blue: #007bff;
 $text-grey:#8f8f8f;
 $white2:#f5f5f5;
 $grey4:rgba(102, 102, 102, 0.5);
+
+input{
+    border: 0
+}
+
+li{
+    list-style-type: none;
+}
+
 .container {
     width: 1300px;
     margin: auto;
@@ -67,7 +76,699 @@ input[type="checkbox"]:checked:after {
     top: 1px;
 }
 
+.menu-section {
+    width: 100%;
+    background-color: $black;
+    padding-top: 18px;
+    .menu-items {
+        display: flex;
+        justify-content: space-between;
+        .menu-item {
+            display: flex;
+            color: $white;
+            @media screen and(max-width: 1300px) {
+                width: 100%;
+            }
+            @media screen and(max-width: 680px) {
+                display: none;
+            }
+            h5 {
+                font-size: 13px;
+                color: $grey;
+                padding-left: 8px;
+            }
+            a {
+                color: $white;
+                font-size: 13px;
+                padding-right: 12px;
+                height: 20px;
+                &:hover {
+                    border-bottom: 1px solid $white;
+                }
+            }
+            .item {
+                width: 1px;
+                height: 12px;
+                background-color: $white;
+                margin-top: 2px;
+                opacity: .2;
+            }
+            span {
+                color: $white;
+                font-size: 13px;
+                padding-left: 2px;
+            }
+        }
+        .tracking {
+            display: flex;
+            width: 20%;
+            justify-content: space-between;
+            @media screen and(max-width: 1300px) {
+                width: 100%;
+                justify-content: space-around;
+            }
+            li {
+                a {
+                    border-right: 1px solid $grey;
+                    padding-right: 15px;
+                    color: $white;
+                    font-size: 13px;
+                    &:hover {
+                        border-bottom: 1px solid $white;
+                    }
+                }
+            }
+            .currencies {
+                padding-right: 15px;
+                height: 36px;
+                &:hover .currency {
+                    display: flex;
+                }
+                position: relative;
+                cursor: pointer;
+                color: $white;
+                font-size: 13px;
+                padding-top: 3px;
+                i {
+                    font-size: 8px;
+                }
+                .currency {
+                    display: flex;
+                    flex-direction: column;
+                    right: 5px;
+                    width: 150px;
+                    height: 60px;
+                    background-color: $white;
+                    position: absolute;
+                    justify-content: space-between;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+                    top: 36px;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    display: none;
+                    li {
+                        color: $grey;
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+                    .usa {
+                        color: $red;
+                        border-bottom: 1px solid $grey;
+                    }
+                }
+            }
+            .language {
+                color: $white;
+                font-size: 13px;
+                padding-top: 3px;
+                position: relative;
+                cursor: pointer;
+                &:hover .item {
+                    display: flex;
+                }
+                i {
+                    font-size: 8px;
+                }
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    right: 5px;
+                    width: 150px;
+                    height: 60px;
+                    background-color: $white;
+                    position: absolute;
+                    justify-content: space-between;
+                    padding-top: 10px;
+                    padding-bottom: 15px;
+                    top: 36px;
+                    padding-left: 10px;
+                    padding-right: 20px;
+                    display: none;
+                    li {
+                        color: $grey;
+                        &:hover {
+                            color: $red;
+                        }
+                    }
+                    .eng {
+                        color: $red;
+                        border-bottom: 1px solid $grey;
+                        padding-bottom: 1px;
+                    }
+                }
+                .line {
+                    width: 1px;
+                    height: 15px;
+                    background-color: $grey;
+                    position: absolute;
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+.header-section {
+    width: 100%;
+    background-color: $red;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .header-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 250px;
+        .logo {
+            padding-top: 10px;
+        }
+        .search {
+            width: 550px;
+            height: 50px;
+            background-color: $white;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 17px;
+            padding-right: 20px;
+            @media screen and(max-width: 980px) {
+                display: none;
+            }
+            @media screen and(max-width: 1300px) {
+                width: 170%;
+            }
+            .search-item {
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                .border {
+                    cursor: pointer;
+                    position: relative;
+                    border-right: 2px solid $grey2;
+                    padding-right: 20px;
+                    color: #666;
+                    &:hover .products {
+                        display: flex;
+                    }
+                    i {
+                        font-size: 12px;
+                        color: $grey;
+                        padding-left: 4px;
+                    }
+                    .products {
+                        background-color: $white;
+                        width: 150px;
+                        height: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        position: absolute;
+                        left: -20px;
+                        padding-top: 15px;
+                        display: none;
+                        z-index: 1;
+                        .all {
+                            color: $red;
+                        }
+                        li {
+                            border-bottom: 1px dashed $grey2;
+                            padding-left: 20px;
+                            padding-bottom: 10px;
+                            a {
+                                color: $grey;
+                                &:hover {
+                                    color: $red;
+                                }
+                            }
+                        }
+                        .page {
+                            border-bottom: 0px;
+                        }
+                    }
+                }
+            }
+            input {
+                padding-left: 25px;
+                width: 400px;
+                padding-right: 15px;
+                @media screen and(max-width: 1300px) {
+                    width: 100%;
+                }
+            }
+            i {
+                color: $black;
+                font-size: 17px;
+            }
+        }
+        .user-place {
+            display: flex;
+            padding-top: 15px;
+            position: relative;
+            @media screen and(max-width: 1300px) {
+                width: 100%;
+            }
+            @media screen and(max-width: 800px) {
+                display: none;
+            }
+            li {
+                &:hover ul {
+                    display: flex;
+                }
+                position: relative;
+                i {
+                    color: $white;
+                    font-size: 25px;
+                    margin-left: 20px;
+                    cursor: pointer;
+                }
+                ul {
+                    width: 150px;
+                    height: 80px;
+                    background-color: $white;
+                    position: absolute;
+                    left: -110px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    display: none;
+                    li {
+                        padding-left: 20px;
+                        a {
+                            color: $grey;
+                            font-size: 14px;
+                            &:hover {
+                                color: $red;
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+                    .sign-in {
+                        border-bottom: 1px solid $grey2;
+                        height: 33px;
+                    }
+                }
+                .user {
+                    width: 400px;
+                    height: 50px;
+                    background-color: $white;
+                    position: absolute;
+                    left: -360px;
+                    top: 30px;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+
+.category-section {
+    width: 100%;
+    background-color: $red2;
+    padding-top: 20px;
+    .category-items {
+        display: flex;
+        .category {
+            display: flex;
+            li {
+                display: flex;
+                cursor: pointer;
+                position: relative;
+                height: 44px;
+                width: 250px;
+                padding-top: 8px;
+                @media screen and(max-width: 1300px) {
+                    width: 100%;
+                }
+                &:hover .category-item {
+                    display: flex;
+                }
+                i {
+                    color: $white;
+                    font-size: 15px;
+                    padding-top: 1px;
+                }
+                h3 {
+                    color: $white;
+                    font-size: 14px;
+                    padding-left: 20px;
+                }
+                .category-item {
+                    width: 100%;
+                    height: 250px;
+                    position: absolute;
+                    top: 44px;
+                    flex-direction: column;
+                    display: none;
+                    background-color: $white;
+                    z-index: 1;
+                    li {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding-left: 15px;
+                        border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+                        height: 41.5px;
+                        padding-top: 15px;
+                        padding-right: 10px;
+                        position: relative;
+                        &:nth-child(6) {
+                            border: 0px;
+                        }
+                        &:hover .pages {
+                            display: flex;
+                        }
+                        &:hover .catalog {
+                            display: flex;
+                        }
+                        &:hover {
+                            border-left: 1px solid $red;
+                        }
+                        &:hover .home {
+                            display: flex;
+                        }
+                        a {
+                            color: $grey;
+                            font-size: 14px;
+                        }
+                        i {
+                            color: $grey;
+                            font-size: 10px;
+                            padding-top: 4px;
+                        }
+                        .home {
+                            width: 250px;
+                            height: 498px;
+                            position: absolute;
+                            right: -250px;
+                            top: 0px;
+                            display: none;
+                            flex-direction: column;
+                            background-color: $white;
+                            .home-item {
+                                &:hover a {
+                                    color: $red;
+                                }
+                                a {
+                                    color: $grey;
+                                }
+                            }
+                        }
+                        .catalog {
+                            width: 250px;
+                            height: 82px;
+                            position: absolute;
+                            right: -250px;
+                            top: 0px;
+                            display: none;
+                            flex-direction: column;
+                            background-color: $white;
+                            li {
+                                display: flex;
+                                justify-content: space-between;
+                                &:hover .catalog-item {
+                                    display: flex;
+                                }
+                                &:hover .product-item {
+                                    display: flex;
+                                }
+                                a {
+                                    color: $grey;
+                                    &:hover {
+                                        color: $red;
+                                    }
+                                }
+                                .catalog-item {
+                                    width: 250px;
+                                    height: 165px;
+                                    position: absolute;
+                                    right: -250px;
+                                    top: 0;
+                                    flex-direction: column;
+                                    display: none;
+                                    background-color: $white;
+                                    li {
+                                        &:hover a {
+                                            color: $red;
+                                        }
+                                    }
+                                }
+                                .game {
+                                    border-bottom: 0px;
+                                }
+                                .product-item {
+                                    width: 250px;
+                                    height: 125px;
+                                    position: absolute;
+                                    right: -250px;
+                                    top: 0;
+                                    flex-direction: column;
+                                    display: none;
+                                    background-color: $white;
+                                    li {
+                                        &:hover a {
+                                            color: $red;
+                                        }
+                                    }
+                                    .about {
+                                        border-bottom: 0px;
+                                    }
+                                }
+                            }
+                        }
+                        .pages {
+                            width: 250px;
+                            height: 166px;
+                            position: absolute;
+                            right: -250px;
+                            display: none;
+                            flex-direction: column;
+                            background-color: $white;
+                            li {
+                                &:hover a {
+                                    color: $red;
+                                }
+                                &:nth-child(4) {
+                                    border-bottom: 0px;
+                                }
+                                a {
+                                    color: $grey;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .store {
+                border-bottom: 0px;
+            }
+        }
+        .nav-bar {
+            display: flex;
+            border-left: 1px solid $grey2;
+            height: 25px;
+            @media screen and(max-width: 1300px) {
+                width: 100%;
+            }
+            @media screen and(max-width: 980px) {
+                display: none;
+            }
+            li {
+                display: flex;
+                padding-top: 5px;
+                position: relative;
+                height: 45px;
+                &:hover .pages {
+                    display: flex;
+                }
+                &:hover .catalog {
+                    display: flex;
+                }
+                &:hover .home {
+                    display: flex;
+                }
+                a {
+                    color: $white;
+                    font-size: 13px;
+                    font-weight: 600;
+                    margin-left: 40px;
+                }
+                i {
+                    font-size: 8px;
+                    margin-top: 2px;
+                    margin-left: 2px;
+                    color: $white;
+                }
+                .home {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    width: 200px;
+                    height: 498px;
+                    justify-content: space-between;
+                    top: 45px;
+                    display: none;
+                    background-color: $white;
+                    z-index: 1;
+                    .home-item {
+                        display: flex;
+                        text-transform: capitalize;
+                        border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+                        height: 35px;
+                        padding-top: 9px;
+                        &:nth-child(12) {
+                            border: 0px;
+                        }
+                        &:hover a {
+                            color: $red;
+                        }
+                        a {
+                            color: $grey;
+                        }
+                    }
+                }
+                .catalog {
+                    width: 1050px;
+                    left: -85px;
+                    height: 300px;
+                    top: 45px;
+                    position: absolute;
+                    display: none;
+                    padding-top: 5px;
+                    background-color: $white;
+                    z-index: 1;
+                    li {
+                        display: flex;
+                        .page {
+                            width: 250px;
+                            padding-top: 20px;
+                            &:nth-child(2) {
+                                margin-left: 10px;
+                            }
+                            li {
+                                a {
+                                    width: 100%;
+                                    border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+                                    padding-top: 10px;
+                                    color: $grey;
+                                    &:hover {
+                                        color: $red;
+                                    }
+                                }
+                                .page-item {
+                                    color: $black;
+                                }
+                                .game {
+                                    border-bottom: 0px;
+                                }
+                            }
+                        }
+                        .new-product {
+                            width: 250px;
+                            padding-top: 15px;
+                            cursor: pointer;
+                            li {
+                                &:hover a {
+                                    color: $red;
+                                }
+                                a {
+                                    color: $black;
+                                    padding-top: 5px;
+                                }
+                            }
+                            .sale {
+                                display: flex;
+                                padding-left: 30px;
+                                height: 65px;
+                                .img-item {
+                                    background-color: $grey2;
+                                }
+                                .info {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-top: -14px;
+                                    justify-content: space-around;
+                                    li {
+                                        a {
+                                            margin-top: 10px;
+                                            &:hover {
+                                                color: $red;
+                                            }
+                                            font-size: 15px;
+                                        }
+                                    }
+                                    .money {
+                                        display: flex;
+                                        padding-left: 10px;
+                                        h3 {
+                                            color: $red;
+                                            padding-left: 30px;
+                                            span {
+                                                font-size: 13px;
+                                                color: $grey;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .game-item {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                .pages {
+                    width: 180px;
+                    height: 180px;
+                    position: absolute;
+                    top: 45px;
+                    display: none;
+                    flex-direction: column;
+                    background-color: $white;
+                    li {
+                        border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+                        padding-top: 15px;
+                        &:hover a {
+                            color: $red;
+                        }
+                        &:nth-child(4) {
+                            border-bottom: 0px;
+                        }
+                        a {
+                            color: $grey;
+                        }
+                    }
+                }
+            }
+        }
+        .shipping {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 20px;
+            @media screen and(max-width: 980px) {
+                display: none;
+            }
+            .ship-item {
+                display: flex;
+                padding-bottom: 15px;
+                border-left: 1px solid $grey2;
+                height: 25px;
+                padding-left: 30px;
+                h5 {
+                    color: $white;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
+
 .content {
+    margin-bottom: 70px;
+
     .container {
         .content-top {
             height: 50px;
@@ -602,7 +1303,9 @@ input[type="checkbox"]:checked:after {
                                     outline: none;
                                     cursor: pointer;
                                     color: gray;
-                                    margin: 260px;
+                                    position: relative;
+                                    left: 260px;
+                                    top: 260px;
                                     background-color: white;
                                     font-weight: 300;
                                     &:hover {
